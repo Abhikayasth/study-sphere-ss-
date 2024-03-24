@@ -1,0 +1,70 @@
+/* LandingPage.css */
+.landing-page {
+  animation: fadeIn 1s ease-in-out;
+  background-image: url(../imgs/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-image: blur(8px);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.about-us {
+  animation: slideInFromLeft 1s ease-in-out;
+  background-color: #f8f9fa; /* Add a background color */
+}
+
+@keyframes slideInFromLeft {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.get-started {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.footer {
+  transition: opacity 1s ease-in-out;
+}
+
+.footer.visible {
+  opacity: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px; /* Adjust as needed */
+  background-color: #f8f9fa; /* Add a background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none; /* Remove the bullet point */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  animation: colorChange 2s infinite;
+  text-decoration: none;
+  font-size: 24px; /* Adjust as needed */
+  color: #333;
+  cursor: pointer;
+}
+
+@keyframes colorChange {
+  0% { color: black; }
+  50% { color: blue; }
+  100% { color: black; }
+}
